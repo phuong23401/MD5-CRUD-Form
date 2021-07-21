@@ -1,0 +1,30 @@
+<h1>Create new product</h1>
+<form>
+    <table>
+        <tr>
+            <td>
+                <p>ID</p>
+            </td>
+            <td>
+                <input [(ngModel)]="id" name="id"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Name</p>
+            </td>
+            <td>
+                <input [(ngModel)]="name" name="name"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Price</p>
+            </td>
+            <td>
+                <input [(ngModel)]="price" name="price"/>
+            </td>
+        </tr>
+    </table>
+    <button type="submit" (click)="save()">Save</button>
+</form>
